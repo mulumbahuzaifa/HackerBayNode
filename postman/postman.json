@@ -1,0 +1,172 @@
+{
+  "info": {
+    "_postman_id": "e9e68640-074a-480d-a1ce-f93739de221f",
+    "name": "hackerbay",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:5000/image",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "word",
+              "value": "pfrom",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/image",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["image"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/jsonpatch/add",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "word",
+              "value": "pfrom",
+              "type": "text"
+            },
+            {
+              "key": "score",
+              "value": "6",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/jsonpatch/add",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["jsonpatch", "add"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/users",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mywicm9sZV9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiJDJhJDEwJEhUdWtpWVRMR0pZbWhQeHI2SjdkSS5kVnB0RzhlMUVSTkcxU2pYN3dQUElYVVNJaC5lWDNLIiwiY3JlYXRlZEF0IjoiMjAyMS0xMi0wOVQwOTo0NjoxMC4wMDBaIiwidXBkYXRlZEF0IjoiMjAyMS0xMi0wOVQwOTo0NjoxMC4wMDBaIiwiaWF0IjoxNjM5MDQ5NjQ5LCJleHAiOjE2NDE2NDE2NDl9.SMofmQrv_uaU9lzAxGFmrnWdx3qr1ceIAyTA3JG3nFk",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"username\": \"admin\",\r\n\"password\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["users"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/auth/signin",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "admin",
+              "type": "text"
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/auth/signin",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth", "signin"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:5000/auth/signup",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "username",
+              "value": "admin",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "admin",
+              "type": "text"
+            },
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:5000/auth/signup",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["auth", "signup"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
